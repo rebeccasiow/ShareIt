@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<html>
+<head>
+    <title>Upload Form | File Sharing Site</title>
+</head>
+<body>
+    <!-- Based heavily on example from class wiki -->
+<h5> Uploader </h5>
+<form enctype="multipart/form-data" action="uploader.php" method="POST">
+    <p>
+	<input type="hidden" name="MAX_FILE_SIZE" value="20000000" /> <!-- 20 MB -->
+	<label for="uploadfile_input">Choose a file to upload:</label> <input name="uploadedFile" type="file" id="uploadfile_input" />
+    </p>
+    <h2>
+	<label for="ispublic_input">Make file public?</label>
+	<input type="checkbox" name="make_file_public" id="ispublic_input" />
+    </h2>
+    <p>
+	<input type="submit" value="Upload File" />
+    </p>
+</form>
+
+</body>
+</html>
